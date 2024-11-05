@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Watermeloncodes Survey Form</h1>
+    <p id="description"><em>Please take your time to fill out the information below</em></p>
+
+   <div class="main">
+   <form id="survey-form">
+   <label id="name-label">Name</label><br>
+   <input id="name" type="text" placeholder="Enter your name" required>
+   <br><br>
+
+   <label id="email-label">Email</label><br>
+   <input id="email" type="email" placeholder="Enter your email" required>
+   <br><br>
+
+   <label id="number-label">Age(Optional)</label><br>
+   <input id="number" type="number" min="10" max="75" placeholder="Age">
+   <br><br>
+
+   <label for="dropdown">How do you best like your watermelon?</label><br>
+   <select id ="dropdown" placeholder="Choose your pick below">
+     <option id="option"></option>
+     <option id="option">Sliced</option>
+     <option id="option">Blended</option>
+     <option id="option">Whole</option>
+     <option id="option">Ice cold</option>
+     <option id="option">Other</option>
+   </select>
+<br><br>
+
+   <p>Would you recommend our watermelons to a friend?</p>
+   <input type="radio" name="choice" value="rad">
+   <label for="radio">Definitely</label>
+   <br>
+   <input type="radio" name="choice" value="rad">
+   <label for="radio">Maybe</label>
+   <br>
+   <input type="radio" name="choice" value="rad">
+   <label for="radio">Absolutey Not!</label>
+<br><br><br>
+
+   <p>What would you like to see improved? (Check all that apply)</p>
+   <input type="checkbox" value="box">
+   <label for="checkbox">Watermelon quality</label> <br><br>
+   <input type="checkbox" value="box">
+   <label for="checkbox">Customer Service</label><br><br>
+   <input type="checkbox" value="box">
+   <label for="checkbox">Delivery Times</label><br><br>
+   <input type="checkbox" value="box">
+   <label for="checkbox">Our Menu</label><br><br>
+   <input type="checkbox" value="box">
+   <label for="checkbox">Employee Requirements</label><br><br><br>
+
+<p>Any comments or suggestions?</p>
+<textarea placeholder="Enter your comment here...."></textarea><br><br><br>
+<button id="submit">Submit</button>
+   </form> 
+   </div>
+</body>
+</html>
